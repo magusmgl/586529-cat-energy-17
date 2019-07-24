@@ -11,10 +11,12 @@
 }
 
 .page-footer__logo {
-  margin: 0 auto;
+  display: flex;
   padding-top: 39px;
   padding-bottom: 31px;
   border-bottom: 1px solid #dadada;
+  align-self: stretch;
+  justify-content: center;
 }
 
 .page-footer__logo-image {
@@ -26,6 +28,7 @@
   .list_reset;
   display: flex;
   justify-content: space-between;
+
   padding-top: 21px;
   padding-bottom: 22px;
   width: 125px;
@@ -63,7 +66,7 @@
   //
   position: relative;
   //
-  width: 112px;
+  width: 120px;
   .font;
   color: #444444;
   font-family: "Arial MT", sans-serif;
@@ -73,24 +76,13 @@
 
 .copyright__link::after {
   position: absolute;
-  width: 70px;
-  height: 51px;
+  width: 27px;
+  height: 34px;
   content: "";
   background-position: 0 0;
   background-repeat: no-repeat;
-  top: -2px;
-  left: 7px;
+  top: -10px;
+  right: -20px;
   background-image: url(/source/img/logo-color-1.png);
   background-size: 35px 49px;
 }
-
-// .copyright__logo {
-//   display: block;
-//   width: 27px;
-//   height: 34px;
-//   top: 0;
-//   right: 0;
-//   background-image: url(../../../source/img/chicken-small-mobile@1x.jpg);
-//   background-position: 0 0;
-//   background-repeat: no-repeat;
-// }
