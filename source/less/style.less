@@ -1,0 +1,50 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  .font();
+  background-color: @bg-white;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+}
+
+@import "blocks/page-header.less";
+@import "blocks/choice.less";
+@import "blocks/system.less";
+@import "blocks/example.less";
+@import "blocks/contacts.less";
+@import "blocks/page-footer.less";
+@import "variables.less";
+@import "mixins.less";
+
