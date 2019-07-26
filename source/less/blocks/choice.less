@@ -1,0 +1,145 @@
+.choice {
+  margin-bottom: 30px;
+}
+
+.choice__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.choice__header {
+  height: 437px;
+  padding: 29px 35px 0 35px;
+  margin-bottom: 3px;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-size: 87%, 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 150px, 0 0;
+}
+
+.choice__intro {
+  .p-reset;
+  margin-bottom: 19px;
+  .font(@tc-light);
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.choice__slogan {
+  .p-reset;
+  .font(@tc-light);
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  width: 280px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  background-color: @bg-green;
+  .font(@tc-light);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.choice__programm {
+  margin-bottom: 22px;
+}
+
+.choice__list {
+  .list_reset;
+}
+
+.choice__item {
+  padding: 29px 20px 22px 20px;
+  margin-bottom: 20px;
+  background-color: @bg-grey;
+}
+
+.choice__item:last-child {
+  margin-bottom: 0;
+}
+
+.choice__title,
+.choice__description {
+  .p-reset;
+}
+
+.choice__title {
+  position: relative;
+  margin-bottom: 39px;
+  padding-left: 72px;
+  .font(@tc-black);
+  font-size: 24px;
+  line-height: 37.02px;
+  text-transform: uppercase;
+}
+
+.choice__title::before {
+  position: absolute;
+  width: 50px;
+  height: 51px;
+  border-radius: 50%;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: @bg-green;
+}
+
+.choice__title::after {
+  position: absolute;
+  width: 70px;
+  height: 51px;
+  content: "";
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.choice__item--cat-slim h3::after {
+  top: -2px;
+  left: 7px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-size: 35px 49px;
+}
+
+.choice__item--cat-fat h3::after {
+  top: 7px;
+  left: -10px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-size: 67px 28px;
+}
+
+.choice__description {
+  padding-bottom: 23px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dadada;
+  .font(#444444);
+  font-family: "Arial MT", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.choice__catalog {
+  position: relative;
+  .font(@tc-black);
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.choice__catalog::after {
+  position: absolute;
+  top: 6px;
+  right: -30px;
+  width: 24px;
+  height: 11px;
+  content: "";
+  background-image: url("../img/icon-right-arrow-long.svg");
+}
