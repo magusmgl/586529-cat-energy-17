@@ -1,43 +1,10 @@
 @import "import.less";
 
-// Мобильная версия от 320px
-// body {
-//   min-width: 320px;
-// }
-
-// .container {
-//   width: 280px;
-//   padding: 0 20px;
-// }
-
-// Планшетная версия
-@media (min-width: @tablet-width) {
-  .container {
-    width: 640px;
-    padding: 0 64px;
-  }
-
-  .page-header {
-    flex-direction: row;
-  }
-
-  .main-nav_list {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-// Десктопная версия
-@media (min-width: 1200px) {
-  .container {
-    width: 960px;
-    padding: 0 120px;
-  }
-}
 
 body {
   min-width: 320px;
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0;
   .font();
   background-color: @bg-white;
