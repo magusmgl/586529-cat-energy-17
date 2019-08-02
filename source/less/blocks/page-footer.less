@@ -1,11 +1,30 @@
 .page-footer {
   background-color: #f2f2f2;
   padding: 0 20px;
+
+
+  @media (min-width: @tablet-width) {
+    min-width: 708px;
+    padding: 0 30px;
+    //временно
+    height: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    // width: 1220px;
+    padding: 0 40px;
+  }
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
@@ -29,18 +48,29 @@
 }
 
 .social__list {
-  .list_reset;
+  .list_reset();
   display: flex;
   justify-content: space-between;
-  padding-top: 21px;
-  padding-bottom: 22px;
-  width: 125px;
+  padding-top: 23px;
+  padding-bottom: 19px;
+  width: 129px;
   border-bottom: 1px solid #dadada;
+  align-items: baseline;
 }
 
 .social__link {
   display: flex;
   justify-content: center;
+  fill: #666666;
+
+  &:hover,
+  :focus {
+    fill: #68b738;
+  }
+
+  &active {
+    fill-opacity: 0.3;
+  }
 }
 
 .social__link--vkontakte {
@@ -59,57 +89,56 @@
 }
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  padding-top: 22px;
+  padding-top: 17px;
   padding-bottom: 22px;
-  width: 320px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+    width: 162px;
+    position: relative;
+  }
 }
 
 .copyright__link {
-  .font;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+  }
+}
+
+.copyright__name {
+  .font();
   color: #444444;
   font-family: "Arial MT", sans-serif;
   font-size: 16px;
   line-height: 16px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__image {
-  width: 27px;
-  height: 34px;
+.copyright__logo {
+  &:hover,
+  :focus {
+    fill: #68b738;
+  }
+
+  &active {
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
-    min-width: 708px;
-    padding: 0 30px;
-    //временно
-    height: 150px;
-  }
-
-  .page-footer__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .page-footer__social,
   .social__list,
   .page-footer__logo {
     border: none;
-  }
-
-  .page-footer__copyright {
-    padding: 0;
-    margin: 0;
-    width: 162px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-footer {
-    // width: 1220px;
-    padding: 0 40px;
   }
 }
