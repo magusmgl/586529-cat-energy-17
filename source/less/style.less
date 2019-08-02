@@ -1,43 +1,11 @@
-@import "import.less";
-
-// Мобильная версия от 320px
-// body {
-//   min-width: 320px;
-// }
-
-// .container {
-//   width: 280px;
-//   padding: 0 20px;
-// }
-
-// Планшетная версия
-@media (min-width: @tablet-width) {
-  .container {
-    width: 640px;
-    padding: 0 64px;
-  }
-
-  .page-header {
-    flex-direction: row;
-  }
-
-  .main-nav_list {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-// Десктопная версия
-@media (min-width: 1200px) {
-  .container {
-    width: 960px;
-    padding: 0 120px;
-  }
-}
+@import "scaffolding.less";
+@import "variables.less";
+@import "mixins.less";
 
 body {
   min-width: 320px;
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0;
   .font();
   background-color: @bg-white;
@@ -51,3 +19,13 @@ img {
   width: 100%;
   height: auto;
 }
+
+@import "visually-hidden.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/choice.less";
+@import "blocks/system.less";
+@import "blocks/example.less";
+@import "blocks/contacts.less";
+@import "blocks/page-footer.less";
+@import "blocks/catalog.less";
