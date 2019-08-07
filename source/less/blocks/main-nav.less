@@ -90,6 +90,22 @@
   }
 }
 
+.main-nav__item--otherpage a {
+  @media (min-width: @desktop-width) {
+    color: @tc-black;
+  }
+}
+
+.main-nav__item--active-otherpage {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @bg-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @bg-green;
+  }
+}
+
 .main-nav--closed .main-nav__toggle {
   @media (max-width: @mobile-width-only) {
     width: 24px;
